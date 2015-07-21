@@ -31,14 +31,14 @@ public class ManagedServiceFactoryComponent {
     private void printCurrentConfigList() {
         LOGGER.info("Printing the current configuration list: ");
         for (LookupTable lookupTable : services) {
-            LOGGER.info("  Name: " + lookupTable.getPropertyValue("XYZ"));
+            LOGGER.info("  XYZ: " + lookupTable.getPropertyValue("XYZ"));
         }
     }
 
     private void printUpdatedConfigList() {
         LOGGER.info("Printing the updated configuration list: ");
         for (LookupTable lookupTable : services) {
-            LOGGER.info("  Name: " + lookupTable.getPropertyValue("XYZ"));
+            LOGGER.info("  XYZ: " + lookupTable.getPropertyValue("XYZ"));
         }
     }
 
