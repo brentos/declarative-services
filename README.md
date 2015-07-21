@@ -3,6 +3,7 @@
 run mvn clean install for both projects (could use a parent pom)
 
 install through the fuse CLI:
+
 install -s mvn:com.redhat.examples.servicefactory.lookuptable/lookuptable/0.0.1-SNAPSHOT
 
 install -s mvn:com.redhat.examples.servicefactory.lookuptable.impl/lookuptableimpl/0.0.1-SNAPSHOT
@@ -18,7 +19,7 @@ echo "XYZ=abc123" > com.redhat.examples.servicefactory.lookuptable.impl.LookupTa
 
 This will create a new lookuptable instance and will print to the logs the value of XYZ.
 
-running scr:list should then show that LookupTableImpl is not "ACTIVE".
+running scr:list should then show that LookupTableImpl is now "ACTIVE".
 
 Create another config file:
 
